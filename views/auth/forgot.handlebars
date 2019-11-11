@@ -1,0 +1,13 @@
+<div class="container">
+    {{#if errorMessage}}
+    <div class="alert alert-danger">{{errorMessage}}</div>
+    {{/if}}
+    <h2>Password Recovery</h2>
+    <form method="POST" action="/auth/forgot">
+        <div>
+            <input placeholder="Your email" type="text" name="mail" id="mail" class="form-control mb-3" required>
+        </div>
+
+        <div><input type="submit" value="Recover" class="btn btn-primary"></div>
+    </form>
+</div>

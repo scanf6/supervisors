@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auth and CRUD system</title>
+</head>
+
+<body>
+    <div class="navbar bg-dark text-white">
+        <div class="container">
+            {{#if authentified}}
+            <a class="btn btn-danger" href="/auth/signout">Sign Out</a>
+            {{else}}
+            <a class="btn btn-primary" href="/auth/register">Registration</a>
+            <a class="btn btn-success" href="/auth/signin">Sign In</a>
+            {{/if}}
+
+        </div>
+
+    </div>
+    {{{body}}}
+</body>
+
+</html>

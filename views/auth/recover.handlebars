@@ -1,0 +1,21 @@
+<div class="container">
+    {{#if successMessage}}
+    <div class="alert alert-success">{{successMessage}}</div>
+    {{/if}}
+    {{#if errorMessage}}
+    <div class="alert alert-danger">{{errorMessage}}</div>
+    {{/if}}
+    <h2>Password Recovery</h2>
+    <form method="POST" action="/auth/recover/{{resetlink}}">
+        <div>
+            <input placeholder="Your Password" type="password" name="password" id="password" class="form-control mb-3"
+                required>
+        </div>
+        <div>
+            <input placeholder="Confirm your password" type="password" name="confpassword" id="password"
+                class="form-control mb-3" required>
+        </div>
+
+        <div><input type="submit" value="Recover" class="btn btn-primary"></div>
+    </form>
+</div>

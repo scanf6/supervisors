@@ -1,0 +1,22 @@
+<div id="signinForm" class="container">
+    {{#if errorMessage}}
+    <div class="alert alert-danger">{{errorMessage}}</div>
+    {{/if}}
+    {{#if successMessage}}
+    <div class="alert alert-success">{{successMessage}}</div>
+    {{/if}}
+    <h2>Signin</h2>
+    <form method="POST" action="/auth/signin">
+        <div>
+            <input placeholder="Your email" type="text" name="mail" id="mail" class="form-control mb-3" required>
+        </div>
+
+        <div>
+            <input placeholder="Your password" type="password" name="password" id="password" class="form-control mb-3"
+                required>
+        </div>
+
+        <div><input type="submit" value="Sign In" class="btn btn-primary"></div>
+        <a href="/auth/forgot">Forgot my password</a>
+    </form>
+</div>
