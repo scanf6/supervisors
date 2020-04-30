@@ -23,7 +23,7 @@
     "handlebars-helper-equal": "^1.0.0",
     "handlebars-helper-inarray": "^0.1.0",
     "handlebars-helpers": "^0.10.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.15",
     "nodemon": "^1.19.4",
